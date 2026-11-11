@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>הזמנה ל״מי אמר?״</title>
+<meta name="description" content="חבר מזמין אתכם לשחק איתו ב״מי אמר?״, משחק הטריוויה על ציטוטים.">
+<meta property="og:title" content="הזמנה לשחק ב״מי אמר?״">
+<meta property="og:description" content="חבר מזמין אתכם להיות חברים במשחק. לוחצים, מאשרים, ומשחקים.">
+<meta property="og:image" content="https://itaystern.github.io/f/icon.png">
+<meta property="og:type" content="website">
+<meta name="theme-color" content="#281B52">
+<meta name="robots" content="noindex">
+<link rel="icon" href="/f/icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700;800&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --bg: #281B52;
+    --card: #35266B;
+    --line: rgba(255, 255, 255, 0.12);
+    --text: #FFFFFF;
+    --muted: rgba(255, 255, 255, 0.72);
+    --gold: #FFC83D;
+    --gold-deep: #D9A11B;
+    --ink: #2A2150;
+    --primary: #6731DC;
+    --primary-deep: #4B1FA8;
+    --mint: #3BC48A;
+  }
+  * { box-sizing: border-box; }
+  html, body { margin: 0; }
+  body {
+    min-height: 100vh;
+    background: radial-gradient(120% 70% at 50% 0%, #4B2F9A 0%, var(--bg) 60%);
+    background-color: var(--bg);
+    color: var(--text);
+    font-family: 'Rubik', system-ui, -apple-system, 'Segoe UI', Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    padding: 32px 16px 40px;
+  }
+  main { width: 100%; max-width: 420px; text-align: center; }
+  .icon { width: 96px; height: 96px; border-radius: 24px; box-shadow: 0 8px 0 rgba(0, 0, 0, 0.25); }
+  h1 { font-weight: 800; font-size: 28px; line-height: 1.2; margin: 20px 0 8px; }
+  .lede { color: var(--muted); font-size: 16px; line-height: 1.5; margin: 0 0 24px; }
+  .card {
+    background: var(--card);
+    border: 1px solid var(--line);
+    border-radius: 20px;
+    padding: 18px 16px;
+    margin-bottom: 14px;
+    text-align: right;
+  }
+  .step { display: flex; gap: 10px; align-items: flex-start; font-weight: 700; font-size: 17px; margin: 0 0 12px; }
+  .num {
+    flex: none; width: 28px; height: 28px; border-radius: 50%;
+    background: var(--gold); color: var(--ink); font-weight: 800; font-size: 15px;
+    display: inline-flex; align-items: center; justify-content: center;
+  }
+  .note { color: var(--muted); font-size: 14px; line-height: 1.5; margin: 0; }
+  .stores { display: grid; gap: 10px; }
+  .key {
+    display: block; width: 100%; text-decoration: none; text-align: center;
+    font-family: inherit; font-weight: 800; font-size: 17px;
+    padding: 14px 16px; border-radius: 16px; border: 0; cursor: pointer;
+    transform: translateY(0); transition: transform 0.08s;
+  }
+  .key:active { transform: translateY(3px); }
+  .key.gold { background: var(--gold); color: var(--ink); box-shadow: 0 5px 0 var(--gold-deep); }
+  .key.purple { background: var(--primary); color: var(--text); box-shadow: 0 5px 0 var(--primary-deep); }
+  .code-row { display: flex; gap: 10px; align-items: center; justify-content: space-between; margin-top: 4px; }
+  .code {
+    font-weight: 800; font-size: 30px; letter-spacing: 6px; direction: ltr;
+    background: rgba(0, 0, 0, 0.22); border-radius: 14px; padding: 8px 14px; flex: 1; text-align: center;
+  }
+  .copy {
+    flex: none; font-family: inherit; font-weight: 700; font-size: 15px; color: var(--text);
+    background: rgba(255, 255, 255, 0.12); border: 0; border-radius: 14px; padding: 14px 16px; cursor: pointer;
+  }
+  .copied { color: var(--mint); }
+  .hidden { display: none; }
+  footer { margin-top: 22px; font-size: 13px; color: var(--muted); }
+  footer a { color: var(--muted); }
+</style>
+</head>
+<body>
+<main>
+  <img class="icon" src="/f/icon.png" alt="" width="96" height="96">
+  <h1>הוזמנתם ל״מי אמר?״</h1>
+  <p class="lede">חבר רוצה להוסיף אתכם לחברים שלו במשחק. ״מי אמר?״ הוא משחק טריוויה: מופיע ציטוט, ואתם מנחשים מי אמר אותו.</p>
+
+  <section class="card">
+    <p class="step"><span class="num">1</span><span>מורידים את המשחק</span></p>
+    <div class="stores">
+      <a class="key gold" href="https://apps.apple.com/il/app/id6821943662">להורדה ב-App Store</a>
+      <a class="key gold" href="https://play.google.com/store/apps/details?id=com.itaystern.quotermobile">להורדה ב-Google Play</a>
+    </div>
+  </section>
+
+  <section class="card">
+    <p class="step"><span class="num">2</span><span>חוזרים להודעה ולוחצים שוב על הקישור</span></p>
+    <p class="note">המשחק ייפתח, ותוכלו לאשר את החבר. יש לכם כבר את המשחק? אפשר גם לפתוח אותו מכאן:</p>
+    <p style="margin: 12px 0 0;"><a id="open" class="key purple" href="quotermobile://f">פתיחה במשחק</a></p>
+  </section>
+
+  <section id="code-card" class="card hidden">
+    <p class="step"><span>הקישור לא פותח את המשחק?</span></p>
+    <p class="note">במשחק, במסך החברים, בוחרים ״יש לי קוד״ ומקלידים:</p>
+    <div class="code-row">
+      <div id="code" class="code"></div>
+      <button id="copy" class="copy" type="button">העתקה</button>
+    </div>
+  </section>
+
+  <footer>ההזמנה טובה לשבוע, ולאדם אחד. <a href="/mi-amar-legal/">על המשחק</a></footer>
+</main>
+<script>
+  // The code comes in the link: /f/?c=K7P2QX (or /f/#K7P2QX). Six letters and digits, no 0, O, 1, I or L.
+  (function () {
+    var params = new URLSearchParams(location.search);
+    var raw = params.get('c') || location.hash.replace(/^#/, '') || '';
+    var code = raw.trim().toUpperCase();
+    if (!/^[A-HJKMNP-Z2-9]{6}$/.test(code)) return;
+    document.getElementById('code').textContent = code;
+    document.getElementById('code-card').classList.remove('hidden');
+    document.getElementById('open').href = 'quotermobile://f?c=' + code;
+    var copy = document.getElementById('copy');
+    copy.addEventListener('click', function () {
+      var done = function () { copy.textContent = 'הועתק'; copy.classList.add('copied'); };
+      if (navigator.clipboard && navigator.clipboard.writeText) {
+        navigator.clipboard.writeText(code).then(done, function () {});
+      }
+    });
+  })();
+</script>
+</body>
+</html>

@@ -1,0 +1,12 @@
+{
+  "applinks": {
+    "details": [
+      {
+        "appIDs": ["MPK773Q3Q2.com.itaystern.quotermobile"],
+        "components": [
+          { "/": "/f/*", "comment": "Friend invites in Mi Amar?" }
+        ]
+      }
+    ]
+  }
+}

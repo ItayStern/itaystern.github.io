@@ -1,0 +1,13 @@
+[
+  {
+    "relation": ["delegate_permission/common.handle_all_urls"],
+    "target": {
+      "namespace": "android_app",
+      "package_name": "com.itaystern.quotermobile",
+      "sha256_cert_fingerprints": [
+        "1C:45:D1:81:75:1E:BF:9D:95:87:F1:3A:01:56:71:08:5A:20:3F:BD:BE:92:BA:A0:E5:BE:6F:E4:E8:1F:87:F4",
+        "3A:02:CD:32:21:87:A1:2D:5F:D3:3B:E7:82:E9:3A:4B:B3:35:CD:40:74:D6:3B:54:C7:93:B1:E7:0A:15:5F:05"
+      ]
+    }
+  }
+]
